@@ -97,11 +97,11 @@ To see the usage details for a command, type `h <command>` at the prompt.
 ```
   Select
     sca       Select all cookies in DB.
-    sch       Select all cookies matching host.
+    sch       Select all cookies matching host(s).
     sba       Select all entries in blacklist.
-    sbh       Select all blacklist entries matching host.
+    sbh       Select all blacklist entries matching host(s).
     swa       Select all entries in whitelist.
-    swh       Select all whitelist entries matching host.
+    swh       Select all whitelist entries matching host(s).
   List
     l         List the current page of the selection.
     c         Count all entries in the selection.
@@ -111,11 +111,16 @@ To see the usage details for a command, type `h <command>` at the prompt.
     v         View details for a cookie, referenced by number.
   Add
     ah        Add a host to the selection.
+    aw        Add the selection (sch) to whitelist.
+    ab        Add the selection (sch) to blacklist.
   Delete
     dn        Delete one or more entries by number.
     da        Delete all entries in selection.
     de        Delete expired cookies from the selection.
     db        Delete all selected cookies whose hosts are found in the blacklist.
+  Remove
+    rw        Remove the whitelist selection (swh) from whitelist.
+    rb        Remove the blacklist selection (swh) from blacklist.
   Other
     h         Provide usage documentation for commands.
     x         Exit without saving black/white lists.
